@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATM Cash Withdrawal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="atm-container">
+    <div class="atm">
+      <h1>InfoSuper Bank ATM</h1>
+      <p>Available Balance: <span id="balance">$500.00</span></p>
+      <input type="number" id="withdrawAmount" placeholder="Enter amount to withdraw" />
+      <div class="button-container">
+        <button onclick="withdrawCash()">Withdraw</button>
+        <button onclick="resetATM()">Reset</button>
+      </div>
+      <p id="message"></p>
+    </div>
+  </div>
+  <script src="atm.js"></script>
+</body>
+</html>
